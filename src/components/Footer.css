@@ -1,0 +1,9 @@
+.footer{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+.footer__logo img{
+    width: 130px;
+}

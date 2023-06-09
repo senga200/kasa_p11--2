@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ff6060;
+}
+
+.navbar__linkNav{
+    width: 200px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar__logo {
+    padding: 2rem 0 4rem 0;
+}
+
+.navbar__logo img {
+    width: 200px;
+}
+
+

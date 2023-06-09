@@ -1,0 +1,11 @@
+.logements {
+    background-color: #E5E5E5;
+    border-radius:25px ;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    row-gap: 3rem;
+    column-gap: 3.75rem;
+    padding: 3rem;
+    margin: 2.6rem;
+
+}
