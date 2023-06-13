@@ -1,14 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "./App";
+import App from "./pages/Home/Home";
 import React from "react";
-import "./App.css";
-import "./components/Navbar.css";
-import "./components/Logements.css";
-import "./components/LogementCard.css";
-import "./components/Footer.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import About from "./pages/About";
+import "./pages/Home/Home.css";
+import "./components/LayoutComponents/Navbar.css";
+import "./components/HomeComponents/Banner";
+import "./components/HomeComponents/Logements";
+import "./components/LayoutComponents/Footer";
+import Navbar from "./components/LayoutComponents/Navbar";
+import Footer from "./components/LayoutComponents/Footer";
+import About from "./pages/About/About";
 
 
 const router = createBrowserRouter([
@@ -26,7 +26,6 @@ const router = createBrowserRouter([
       element:(
         <>
         <Navbar />
-        <div>A propos</div>,
         <About />
         <Footer />
         </>
