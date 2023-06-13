@@ -1,12 +1,15 @@
 import React from 'react'
 import './LogementCard.css'
+import { Link } from 'react-router-dom'
 //import DataFetch from '../datas/DataFecth'
 
-function LogementCard() {
+function LogementCard({title}) {
   return (
     <div className='logementCard'>
-        {/* /<DataFetch /> */}
-      <h3>Ceci est une Carte logement </h3>
+
+        <Link to='/logement'>
+      {title}
+      </Link>
     </div>
   )
 }

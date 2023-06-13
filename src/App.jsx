@@ -7,20 +7,35 @@ import Banner from "./components/Banner";
 import Logements from "./components/Logements";
 import Container from "./components/Container";
 import Footer from "./components/Footer";
+//import About from "./pages/About";
 
 
-
+// function App() {
+//   return (
+//     <div>
+//       <Navbar />
+//       <Container>
+//       <Banner />
+//       <Logements />
+//       </Container>
+//       <Footer />
+//     </div>
+//   );
+// }
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Container>
-      <Banner />
-      <Logements />
-      </Container>
-      <Footer />
-    </div>
+
+      <div>
+        <Navbar />
+        <Container>
+          <Banner />
+          <Logements />
+        </Container>
+        <Footer />
+      </div>
   );
 }
+
+
 
 export default App;

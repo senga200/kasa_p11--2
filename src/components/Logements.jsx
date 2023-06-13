@@ -1,20 +1,12 @@
 import React from 'react'
 import './Logements.css'
 import LogementCard from './LogementCard'
+import Datas from "../datas/Datas.json"
 
 function Logements() {
   return (
     <div className='logements'>
-      <LogementCard />
-      <LogementCard />
-      <LogementCard />
-      <LogementCard />
-      <LogementCard />
-      <LogementCard />
-      <LogementCard />
-      <LogementCard />
-      <LogementCard />
-
+      {Datas.map ((logement) => <LogementCard key = {logement.id} title = {logement.title} /> )}
     </div>
   )
 }
