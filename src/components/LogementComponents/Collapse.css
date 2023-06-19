@@ -1,0 +1,39 @@
+.menu_collapse{
+    color: white;
+    display: flex;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.collapse_title{
+    background-color: #FF6060;
+    color: white;
+    border-radius: 10px;
+    padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+    margin-right: 1rem;
+    width: 36rem;
+
+}
+
+.collapse_container{
+    height: 10vh;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    color: #FF6060
+}
+
+.collapse_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding: 1rem;
+    border-radius: 10px;
+    height: 10vh;
+    width: 100%;
+}

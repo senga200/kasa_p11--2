@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "./pages/Home/Home";
+import Home from "./pages/Home/Home";
 import React from "react";
 import "./pages/Home/Home.css";
 import "./components/LayoutComponents/Navbar.css";
@@ -9,18 +9,28 @@ import "./components/LayoutComponents/Footer";
 import Navbar from "./components/LayoutComponents/Navbar";
 import Footer from "./components/LayoutComponents/Footer";
 import About from "./pages/About/About";
+import FicheLogement from "./pages/FicheLogement/FicheLogement";
+
+
 
 
 const router = createBrowserRouter([
     {
       path: "/",
-      element: <App />,
+      element: <Home />,
     },
     {
-      path: "/ficheLogement",
-      element: <div>Fiche logement</div>,
+      path: "/logement/:id",
+      element:(
+        <>
+        <Navbar />
+        <FicheLogement/>
+        <div>Fiche logement</div>
+        <Footer />
+        </>
+      )
+     
     },
-    // {path: "/ficheLogement/:id", element: <div>Fiche logement</div>},
     {
       path: "/about",
       element:(
