@@ -106,10 +106,12 @@ import Datas from '../../datas/Datas.json';
 import { useParams } from 'react-router-dom';
 import './FicheLogement.css';
 import Collapse from '../../components/LogementComponents/Collapse';
+import Carrousel from '../../components/LogementComponents/carrousel';
 
 function FicheLogement() {
   const { id } = useParams();
   const logement = Datas.find((data) => data.id === id);
+  //const slides = logement.pictures.map((picture) => ({ img: picture }));
 
   if (!logement) {
     return <div>Annonce non trouvée</div>;
@@ -118,7 +120,7 @@ function FicheLogement() {
   return (
     <div>
       <div className="carrousel">
-        <img src={logement.cover} alt={logement.title} />
+        <Carrousel slides={logement.pictures}/>
       </div>
       <div className="header_logement">
         <div className="header_left">

@@ -6,8 +6,6 @@ function Container(props) {
   return (
     <div className='container'>
         {children}
-        <p>Container</p>
-      
     </div>
   )
 }

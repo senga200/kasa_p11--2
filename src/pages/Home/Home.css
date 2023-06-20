@@ -2,7 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family:"montserrat",sans-serif, "arial";
-  border: solid 1px red;
+}
+.home{
+  margin-inline:6.25rem ;
 }
 
 h1{

@@ -1,0 +1,25 @@
+main {
+color: #FF6060;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.main h1{
+    color : #FF6060;
+    font-size: 18rem;
+    margin: 0;
+}  
+
+h2{
+    color : #FF6060;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.main a {
+color: #FF6060;
+padding-top : 7rem; 
+
+}

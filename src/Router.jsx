@@ -10,6 +10,7 @@ import Navbar from "./components/LayoutComponents/Navbar";
 import Footer from "./components/LayoutComponents/Footer";
 import About from "./pages/About/About";
 import FicheLogement from "./pages/FicheLogement/FicheLogement";
+import Error from "./pages/Error/Error404";
 
 
 
@@ -43,7 +44,12 @@ const router = createBrowserRouter([
 
    
     },
-    { path: "*", element: <div>404 error</div> },
+    { path: "*", element: (
+      <>
+      <Navbar />
+      <Error />
+      </>
+    ) },  
   ]);
 
     export default router;

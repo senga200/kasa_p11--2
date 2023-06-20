@@ -8,7 +8,7 @@ function Navbar() {
     <nav className='navbar'>
       <NavLink to='/'>
       <div className='navbar__logo'>
-        <img src='logoKasa.svg' alt='logo' />
+        <img src='/logoKasa.svg' alt='logo' />
       </div>
       </NavLink>
       
