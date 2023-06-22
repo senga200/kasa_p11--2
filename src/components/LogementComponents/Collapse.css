@@ -1,39 +1,73 @@
 .menu_collapse{
     color: white;
-    display: flex;
-    padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 10px;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
+    height: auto;
+}
+
+.collapse_container{
+    height: auto;
+    margin-bottom: 1rem;
+    color: #FF6060;
 }
 
 .collapse_title{
     background-color: #FF6060;
     color: white;
     border-radius: 10px;
-    padding: 0.3rem 1.5rem 0.3rem 1.5rem;
-    margin-right: 1rem;
-    width: 36rem;
-
+    height:3.25rem ;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    align-items: center;
+    padding-left: 1rem;
 }
 
-.collapse_container{
-    height: 10vh;
+span {
     padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    color: #FF6060
 }
+
+.chevron {
+    transition: all 0.4s ease-in-out;
+}
+.chevron.rotated {
+    transform: rotate(180deg);
+    transition: all 0.4s ease-in-out;
+  }
+
 
 .collapse_content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #F6F6F6;
-    padding: 1rem;
     border-radius: 10px;
-    height: 10vh;
-    width: 100%;
+    height: auto;
+
+}
+.collapse_content.expanded {
+    height: auto;
+    transition: all 1s ease-in-out;
+  }
+
+.collapse_content p {
+    padding-left: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .collapse_container{
+        height: auto;
+    }
+    .collapse_title{
+        height: 3rem;
+    }
+    .collapse_content{
+        height: auto;
+    }
+    .collapse_content.expanded{
+        height: auto;
+        transition: all 1s ease-in-out;
+
+    }
+
+    
 }

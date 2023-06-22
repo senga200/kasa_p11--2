@@ -1,0 +1,25 @@
+.about_main {
+    margin-inline: 6.25rem;
+}
+
+.about_container{
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .about_main {
+        margin: 1rem 1.5rem 2rem 1.5rem;
+        background-color: pink;
+        height: auto;
+    }
+
+    .about_container{
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
+    

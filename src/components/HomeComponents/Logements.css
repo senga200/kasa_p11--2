@@ -9,3 +9,15 @@
     margin-top: 2.6rem;
     margin-bottom: 2.6rem;
 }
+
+@media screen and (max-width: 768px) {
+    .logements {
+        background-color: transparent;
+        grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+        column-gap: 1.5rem;
+        padding: 1.5rem;
+        margin: auto;
+    }
+
+}

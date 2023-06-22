@@ -1,38 +1,59 @@
-// import React from 'react'
-// import './Collapse.css'
-// import { useState } from 'react'
+
+// import React from 'react';
+// import './Collapse.css';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 
-// function Collapse({title, content}) {
-//     const [isOpen, setIsOpen] = useState(false)
-//     // const toggle = () => setIsOpen(!isOpen)
-//     // const toggle = () => setIsOpen((isOpen) => !isOpen)
-//     const toggle = (e) => {console.log(e)}
+// function Collapse({ title, content, collapseClass }) {
+//   const [isOpen, setIsOpen] = React.useState(false);
 
-    
+//   const toggleCollapse = () => {
+//     setIsOpen(!isOpen);
+//   };
+
 //   return (
-//     <div className='collapse'>        
-//       <div className='collapse_title'>{content}
-//       </div>
-//       <div className='collapse_title' onClick={toggle}>
-//             {title} <span className="chevron"> 🔻
-//           {/* <img src="chevron.svg" alt="chevron" /> */}
-//       </span> 
-  
-      
+//     <div className={`menu_collapse ${collapseClass}`}>
+//       <div className='collapse_container'>
+//         <div className="collapse_title" onClick={toggleCollapse}>
+//           {title} <span className="chevron"><FontAwesomeIcon icon={faChevronUp} /></span>
 //         </div>
-
-
-      
+//         {isOpen && (
+//           <div className="collapse_content">
+//             <p>{content}</p>
+//           </div>
+//         )}
+//       </div>
 //     </div>
-//   )
+//   );
 // }
 
-// export default Collapse
+// export default Collapse;
+
+
+
+
+
+
+//   // return (
+//   //   <div className="menu_collapse">
+//   //     <div className='collapse_container'>
+        
+//   //         <div className="collapse_title" onClick=  {toggleCollapse}>
+//   //         {title} <span className="chevron">
+//   //         <FontAwesomeIcon icon = {faChevronUp} ></FontAwesomeIcon></span>
+//   //         </div>
+//   //         {isOpen && <div className="collapse_content">
+//   //           <p>{content}</p></div>}
+//   //       </div>
+//   //     </div>
+//   // );
 
 
 import React from 'react';
 import './Collapse.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -41,13 +62,20 @@ function Collapse({ title, content }) {
     setIsOpen(!isOpen);
   };
 
+  const chevronOpen = isOpen ? 'rotated' : '';
+  const contentExpanded = isOpen ? 'expanded' : '';
+
   return (
     <div className="menu_collapse">
-      <div className='collapse_container'>
-      <div className="collapse_title" onClick={toggleCollapse}>
-        {title} <span className="chevron">🔻</span>
-      </div>
-      {isOpen && <div className="collapse_content">{content}</div>}
+      <div className="collapse_container">
+        <div className="collapse_title" onClick={toggleCollapse}>
+          {title} <span className={`chevron ${chevronOpen}`}>
+            <FontAwesomeIcon icon={faChevronUp} />
+          </span>
+        </div>
+        {isOpen && <div className={`collapse_content ${contentExpanded}`}>
+          <p>{content}</p>
+        </div>}
       </div>
     </div>
   );

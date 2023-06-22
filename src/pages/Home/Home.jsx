@@ -1,5 +1,3 @@
-//import './App.css';
-//import de logoKasa
 import React from "react";
 import Navbar from "../../components/LayoutComponents/Navbar";
 import "./Home.css";
@@ -14,7 +12,9 @@ function Home() {
       <div className="home">
         <Navbar />
         <Container>
+          <div className="banner_container">
           <Banner />
+          </div>
           <Logements />
         </Container>
         <Footer />

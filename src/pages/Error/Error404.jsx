@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function Error404() {
   return (
     <div>
-        <main className='main'>
+        <main className='main_error'>
       <h1>404</h1> 
         <h2>Oups! La page que vous demandez n'existe pas.</h2>
     <Link to='/'>

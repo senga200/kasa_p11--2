@@ -1,6 +1,8 @@
 
 import React, { useState } from 'react';
 import './Carrousel.css';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 function Carrousel({ slides }) {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
@@ -22,11 +24,20 @@ function Carrousel({ slides }) {
   };
 
   return (
+    // <div className="carrousel">
+    //   <button onClick={previousSlide}>Précedent</button>
+    //   <img src={slides[currentSlideIndex]} alt={`Slide n° ${currentSlideIndex + 1}`} />
+    //   <button onClick={nextSlide}>Suivant</button>
+    // </div>
     <div className="carrousel">
-      <button onClick={previousSlide}>Précedent</button>
-      <img src={slides[currentSlideIndex]} alt={`Slide n° ${currentSlideIndex + 1}`} />
-      <button onClick={nextSlide}>Suivant</button>
-    </div>
+    <button className="carousel-button carousel-button-left" onClick={previousSlide}>
+      <FontAwesomeIcon icon={faChevronLeft} />
+    </button>
+    <img src={slides[currentSlideIndex]} alt={`Slide n° ${currentSlideIndex + 1}`} />
+    <button className="carousel-button carousel-button-right" onClick={nextSlide}>
+      <FontAwesomeIcon icon={faChevronRight} />
+    </button>
+  </div>
   );
 }
 

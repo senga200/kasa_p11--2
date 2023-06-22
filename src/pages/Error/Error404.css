@@ -1,4 +1,4 @@
-main {
+.main_error {
 color: #FF6060;
 text-align: center;
 display: flex;
@@ -6,9 +6,9 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 }
-.main h1{
+.main_error h1{
     color : #FF6060;
-    font-size: 18rem;
+    font-size: 13rem;
     margin: 0;
 }  
 
@@ -18,8 +18,26 @@ h2{
     margin: 0;
 }
 
-.main a {
+.main_error a {
 color: #FF6060;
-padding-top : 7rem; 
-
+padding-top : 4rem; 
 }
+
+
+@media screen and (max-width: 768px) {
+    .main_error {
+        margin: 8rem 1.5rem 2rem 1.5rem;
+    }
+
+    .main_error h1{
+        font-size: 8rem;
+    }  
+    h2{
+        font-size: 1.2rem;
+    }
+    .main_error a {
+        padding-top : 6rem; 
+        font-size:0.8rem ;
+    }
+}
+    

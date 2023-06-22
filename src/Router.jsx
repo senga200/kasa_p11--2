@@ -26,7 +26,6 @@ const router = createBrowserRouter([
         <>
         <Navbar />
         <FicheLogement/>
-        <div>Fiche logement</div>
         <Footer />
         </>
       )

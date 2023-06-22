@@ -1,7 +1,6 @@
 import React from 'react'
 import './LogementCard.css'
 import { Link } from 'react-router-dom'
-//import DataFetch from '../datas/DataFecth'
 
 function LogementCard({title, cover, id}) {
   return (
@@ -9,9 +8,10 @@ function LogementCard({title, cover, id}) {
 
         <Link to={`/logement/${id}`}>
       <img src={cover} alt={title} />
-     {title} 
-      </Link>
-
+      <div className='title_container'>
+      <div className="title">{title}</div>
+      </div>
+      </Link>  
     </div>
     )
 }
