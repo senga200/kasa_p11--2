@@ -42,15 +42,11 @@ span {
     background-color: #F6F6F6;
     border-radius: 10px;
     height: auto;
-
 }
-.collapse_content.expanded {
-    height: auto;
-    transition: all 1s ease-in-out;
-  }
+
 
 .collapse_content p {
-    padding-left: 1rem;
+    padding-inline: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -65,8 +61,6 @@ span {
     }
     .collapse_content.expanded{
         height: auto;
-        transition: all 1s ease-in-out;
-
     }
 
     

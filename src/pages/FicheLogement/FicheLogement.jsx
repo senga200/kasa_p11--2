@@ -6,13 +6,15 @@ import './FicheLogement.css';
 import Collapse from '../../components/LogementComponents/Collapse';
 import Carrousel from '../../components/LogementComponents/carrousel';
 import Tags from '../../components/LogementComponents/Tags';
+import Rating from '../../components/LogementComponents/Rating';
+import { Navigate } from 'react-router-dom';
 
 function FicheLogement() {
   const { id } = useParams();
   const logement = Datas.find((data) => data.id === id);
 
   if (!logement) {
-    return <div>Annonce non trouvée</div>;
+    return <Navigate to="/error" />;
   }
 
   return (
@@ -31,10 +33,14 @@ function FicheLogement() {
           </div>
           <div className="header_right">
             <div className="host">
-              <div>{logement.host.name}</div>
+              <div className='host_name'>{logement.host.name}</div>
+              <div className='host_pic'>
               <img src={logement.host.picture} alt={logement.host.name} />
             </div>
-            <div className="rating">{logement.rating}/5</div>
+            </div>
+            <div className="rating_FicheLogement">
+            <Rating /> 
+            </div>
           </div>
         </div>
         <div className="collapse_ficheLogement">

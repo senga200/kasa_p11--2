@@ -24,11 +24,7 @@ function Carrousel({ slides }) {
   };
 
   return (
-    // <div className="carrousel">
-    //   <button onClick={previousSlide}>Précedent</button>
-    //   <img src={slides[currentSlideIndex]} alt={`Slide n° ${currentSlideIndex + 1}`} />
-    //   <button onClick={nextSlide}>Suivant</button>
-    // </div>
+  
     <div className="carrousel">
     <button className="carousel-button carousel-button-left" onClick={previousSlide}>
       <FontAwesomeIcon icon={faChevronLeft} />

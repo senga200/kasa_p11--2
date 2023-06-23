@@ -1,0 +1,15 @@
+.full_star {
+    color: #FF6060; 
+  }
+  
+  .empty_star {
+    color: #e3e3e3; 
+  }
+  
+
+  .stars {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+  }

@@ -11,7 +11,7 @@
         .tags {
             display: flex;
             flex-wrap: wrap;
-            margin-bottom: 1rem;
+
             font-size: 10px;
             width: auto;
         }
