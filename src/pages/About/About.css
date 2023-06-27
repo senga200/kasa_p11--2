@@ -12,7 +12,6 @@
 @media screen and (max-width: 768px) {
     .about_main {
         margin: 1rem 1.5rem 2rem 1.5rem;
-        background-color: pink;
         height: auto;
     }
 

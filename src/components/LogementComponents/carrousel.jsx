@@ -29,6 +29,11 @@ function Carrousel({ slides }) {
     <button className="carousel-button carousel-button-left" onClick={previousSlide}>
       <FontAwesomeIcon icon={faChevronLeft} />
     </button>
+    <div className="picNumber">
+      <span className="currentSlide">{currentSlideIndex + 1}</span> / <span className="totalSlides">{slides.length}</span>
+    </div>
+
+
     <img src={slides[currentSlideIndex]} alt={`Slide n° ${currentSlideIndex + 1}`} />
     <button className="carousel-button carousel-button-right" onClick={nextSlide}>
       <FontAwesomeIcon icon={faChevronRight} />

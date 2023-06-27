@@ -21,6 +21,10 @@
     color: #ff6060;
 }
 
+.active {
+    text-decoration: underline;
+}
+
 /* .navbar__linkNav a:active {
     text-decoration: underline;
 } */
