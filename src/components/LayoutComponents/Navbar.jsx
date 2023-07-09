@@ -9,14 +9,14 @@ function Navbar() {
 
   return (
     <nav className='navbar'>
-      <NavLink exact to='/' style={location.pathname === '/' ? { textDecoration: 'underline' } : {}}>
+      <NavLink to='/' style={location.pathname === '/' ? { textDecoration: 'underline' } : {}}>
         <div className='navbar__logo'>
           <img src='/logoKasa.svg' alt='logo' />
         </div>
       </NavLink>
       
       <div className='navbar__linkNav'>
-        <NavLink exact to='/' style={location.pathname === '/' ? { textDecoration: 'underline' } : {}}>
+        <NavLink to='/' style={location.pathname === '/' ? { textDecoration: 'underline' } : {}}>
           <div className='accueil'>Accueil</div>
         </NavLink>
         <NavLink to='/about' style={location.pathname === '/about' ? { textDecoration: 'underline' } : {}}>
